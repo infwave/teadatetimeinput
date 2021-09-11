@@ -6,7 +6,7 @@ import moment from 'moment';
 const TeaDateTimeInput = (props) => {
     const {
         formatDate = "DD/MM/YYYY", 
-        formatTime="HH:ii", 
+        formatTime="HH:mm", 
         datetime, 
         is24Hour = true, 
         display = "spinner", 

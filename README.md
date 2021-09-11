@@ -19,13 +19,33 @@ yarn add teadatetimeinput
 
 Requires ``react`` as a peer dependency, dependencies are ``moment.js`` and ``@react-native-community/datetimepicker``.
 
+```bash
+import TeaDateTimeInput from 'teadatetimeinput';
+```
+or
+
+```bash
+const TeaDateTimePicker = require('teadatetimeinput');
+```
+### Basic usage
+
+```bash
+import React, {useState} from 'react';
+import TeaDateTimeInput from 'teadatetimeinput';
+
+export const App = () => {
+    return(
+        <TeaDateTimePicker datetime="01/01/2022 00:00" />
+    );
+}
+```
 ## API
 
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
-| **datetime** (required) | Date() |  | Date and time to work with |
+| **datetime** (required) | String | Initial date and time |
 | **formatDate** (optional) | String | "DD/MM/YYYY" | Date format |
-| **formatTime** (optional) | String | "HH:ii" | Time format |
+| **formatTime** (optional) | String | "HH:mm" | Time format |
 | **is24Hour** (optional) | Bool | True | Should 24h format be used |
 | **display** (optional) | String | "spinner" | ... |
 | **showTextInput** (optional) | Bool | True | Show the input field |

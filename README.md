@@ -17,19 +17,19 @@ yarn add teadatetimeinput
 
 ## Usage
 
-Requires ``react`` as a peer dependency, dependencies are ``moment.js`` and ``@react-native-community/datetimepicker``.
+Requires ``react`` as a peer dependency, dependencies are [moment.js](https://momentjs.com/) and [@react-native-community/datetimepicker](https://www.npmjs.com/package/@react-native-community/datetimepicker).
 
-```bash
+```js
 import TeaDateTimeInput from 'teadatetimeinput';
 ```
 or
 
-```bash
+```js
 const TeaDateTimePicker = require('teadatetimeinput');
 ```
 ### Basic usage
 
-```bash
+```js
 import React, {useState} from 'react';
 import TeaDateTimeInput from 'teadatetimeinput';
 
@@ -43,11 +43,11 @@ export const App = () => {
 
 | Name         | Type    | Default | Description |
 | ------------ | ------- | ------- | ----------- |
-| **datetime** (required) | String | Initial date and time |
+| **datetime** (required) | String |  | Initial date and time |
 | **formatDate** (optional) | String | "DD/MM/YYYY" | Date format |
 | **formatTime** (optional) | String | "HH:mm" | Time format |
 | **is24Hour** (optional) | Bool | True | Should 24h format be used |
-| **display** (optional) | String | "spinner" | ... |
+| **display** (optional) | String | "spinner" | Defines the visual display of the picker |
 | **showTextInput** (optional) | Bool | True | Show the input field |
 | **showPicker** (optional) | Bool | False | Show the picker when the first time render the page |
 | **inputWrapStyle** (optional) | Object | {} | Styles to apply to input wrap component |
